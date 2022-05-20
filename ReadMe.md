@@ -12,14 +12,7 @@ This project has been generated with [Spring initializr](https://start.spring.io
 
 ## Source code structuration
 
-- **src/main/java** :
-    - **fr.pe.incub.suivistartups.configuration.security** : 
-    - **fr.pe.incub.suivistartups.dao** : entities and repositories
-    - **fr.pe.incub.suivistartups.logic** : business logic classes
-    - **fr.pe.incub.suivistartups.services** : REST service classes
-- **src/main/resources** : Configuration files (Springboot) + Dockerfile and SQL scripts
-- **src/main/test** : test classes
-
+TODO
 
 # [Local development] Launch the application on localhost
 
