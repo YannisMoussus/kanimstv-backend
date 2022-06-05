@@ -1,8 +1,12 @@
 /home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/configuration/security/jwt/JwtUtils.java
 /home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/configuration/SuiviStartupApplication.java
+/home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/dto/mappers/MovieMapper.java
+/home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/dao/entities/MovieEntity.java
+/home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/rest_controllers/MovieRestController.java
 /home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/configuration/security/CorsConfiguration.java
 /home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/rest_controllers/TestService.java
 /home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/playload/request/SignupRequest.java
+/home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/dao/repositories/MovieRepository.java
 /home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/rest_controllers/MemberIncubatorRestController.java
 /home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/business_logic/MemberIncubatorLogic.java
 /home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/rest_controllers/RolePermissionRestController.java
@@ -27,6 +31,8 @@
 /home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/configuration/security/jwt/AuthEntryPointJwt.java
 /home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/exceptions/BadRequestException.java
 /home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/dao/repositories/RolePermissionRepository.java
+/home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/business_logic/MovieLogic.java
+/home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/dto/MovieDto.java
 /home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/exceptions/InternalServerException.java
 /home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/playload/request/LoginRequest.java
 /home/yannis-moussus/kanimstv-backend/src/main/java/kanimstv/enums/ResponseMessageEnum.java

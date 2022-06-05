@@ -24,6 +24,17 @@ CREATE TABLE piloti.members_role_permission (
     CONSTRAINT roles_permission_member_fkey FOREIGN KEY (role_permission_id) REFERENCES piloti.role_permission (id) MATCH SIMPLE
 );
 
+CREATE TABLE piloti.movies (
+    id                  SMALLSERIAL,
+    name                VARCHAR(50),
+    description         VARCHAR(50),
+    duration            VARCHAR(50),
+    released_date       VARCHAR(50),
+    bill                bytea,
+    age_limit           VARCHAR(50),
+    mark                VARCHAR(50),
+);
+
 INSERT INTO piloti.role_permission (id, name) VALUES (1, 'ROLE_ADMIN');
 INSERT INTO piloti.role_permission (id, name) VALUES (2, 'ROLE_RH');
 INSERT INTO piloti.role_permission (id, name) VALUES (3, 'ROLE_VISU');

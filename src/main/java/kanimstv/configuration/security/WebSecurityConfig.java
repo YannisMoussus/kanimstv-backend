@@ -13,7 +13,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import kanimstv.configuration.security.jwt.AuthEntryPointJwt;
+// import kanimstv.configuration.security.jwt.AuthEntryPointJwt;
 import kanimstv.configuration.security.jwt.AuthTokenFilter;
 import kanimstv.configuration.security.services.MemberDetailsServiceImpl;
 @Configuration
@@ -25,8 +25,10 @@ import kanimstv.configuration.security.services.MemberDetailsServiceImpl;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	MemberDetailsServiceImpl memberDetailsService;
-	@Autowired
-	private AuthEntryPointJwt unauthorizedHandler;
+	
+	// @Autowired
+	// private AuthEntryPointJwt unauthorizedHandler;
+	
 	@Bean
 	public AuthTokenFilter authenticationJwtTokenFilter() {
 		return new AuthTokenFilter();

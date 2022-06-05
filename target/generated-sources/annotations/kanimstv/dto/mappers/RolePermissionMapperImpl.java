@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-05-20T13:07:46+0200",
+    date = "2022-06-05T14:22:26+0200",
     comments = "version: 1.3.1.Final, compiler: javac, environment: Java 16.0.1 (AdoptOpenJDK)"
 )
 @Component
@@ -30,6 +30,20 @@ public class RolePermissionMapperImpl implements RolePermissionMapper {
     }
 
     @Override
+    public RolePermissionEntity mapDtoToEntity(RolePermissionDto rolePermissionDto) {
+        if ( rolePermissionDto == null ) {
+            return null;
+        }
+
+        RolePermissionEntity rolePermissionEntity = new RolePermissionEntity();
+
+        rolePermissionEntity.setId( rolePermissionDto.getId() );
+        rolePermissionEntity.setName( rolePermissionDto.getName() );
+
+        return rolePermissionEntity;
+    }
+
+    @Override
     public List<RolePermissionDto> mapEntityListToDtoList(List<RolePermissionEntity> rolePermissionEntity) {
         if ( rolePermissionEntity == null ) {
             return null;
@@ -44,16 +58,16 @@ public class RolePermissionMapperImpl implements RolePermissionMapper {
     }
 
     @Override
-    public RolePermissionEntity mapDtoToEntity(RolePermissionDto rolePermissionDto) {
+    public List<RolePermissionEntity> mapDtoListToEntityList(List<RolePermissionDto> rolePermissionDto) {
         if ( rolePermissionDto == null ) {
             return null;
         }
 
-        RolePermissionEntity rolePermissionEntity = new RolePermissionEntity();
+        List<RolePermissionEntity> list = new ArrayList<RolePermissionEntity>( rolePermissionDto.size() );
+        for ( RolePermissionDto rolePermissionDto1 : rolePermissionDto ) {
+            list.add( mapDtoToEntity( rolePermissionDto1 ) );
+        }
 
-        rolePermissionEntity.setId( rolePermissionDto.getId() );
-        rolePermissionEntity.setName( rolePermissionDto.getName() );
-
-        return rolePermissionEntity;
+        return list;
     }
 }

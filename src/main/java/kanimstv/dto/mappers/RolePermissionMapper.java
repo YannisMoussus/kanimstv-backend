@@ -12,7 +12,8 @@ import kanimstv.dto.RolePermissionDto;
 public interface RolePermissionMapper {
 
     RolePermissionDto mapEntityToDto(RolePermissionEntity rolePermissionEntity);
-    List<RolePermissionDto> mapEntityListToDtoList(List<RolePermissionEntity> rolePermissionEntity);
     RolePermissionEntity mapDtoToEntity(RolePermissionDto rolePermissionDto);
+    List<RolePermissionDto> mapEntityListToDtoList(List<RolePermissionEntity> rolePermissionEntity);
+    List<RolePermissionEntity> mapDtoListToEntityList(List<RolePermissionDto> rolePermissionDto);
     
 }
