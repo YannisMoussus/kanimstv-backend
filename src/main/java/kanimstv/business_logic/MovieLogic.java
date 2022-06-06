@@ -3,13 +3,14 @@ package kanimstv.business_logic;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
 
 import kanimstv.dao.entities.MovieEntity;
 import kanimstv.dao.repositories.MovieRepository;
 import kanimstv.dto.MovieDto;
 import kanimstv.dto.mappers.MovieMapper;
 
+@Service
 public class MovieLogic {
     
     @Autowired
