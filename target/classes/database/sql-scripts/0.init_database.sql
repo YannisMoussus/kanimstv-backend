@@ -46,9 +46,3 @@ INSERT INTO piloti.member_incubator (id, pseudonyme, email, phone_number, is_old
 INSERT INTO piloti.member_incubator (id, pseudonyme, email, phone_number, is_old_member) VALUES (3, 'PUERTOLAS', 'anais.puetolas@pole-emploi.fr', null, FALSE);
 ALTER SEQUENCE piloti.member_incubator_id_seq RESTART WITH 4;
 
-
-INSERT INTO piloti.movie(id, name, description, duration, released_date, bill, age_limit, mark) VALUES (1, 'Avatar', 'L action se déroule en 21543 sur Pandora, une des lunes de Polyphème, une planète géante gazeuse en orbite autour d Alpha Centauri A, le système stellaire le plus proche de la Terre...', '162min', '2009', '', '12', '');
-INSERT INTO piloti.movie(id, name, description, duration, released_date, bill, age_limit, mark) VALUES (2, 'Ducobu Président', 'Ce film est une comédie française réalisée par Élie Semoun, et prévue pour 2022 Il s agit du quatrième film inspiré de la série de bande dessinée belge L Élève Ducobu de Godi et Zidrou.', 'Inconnu', '13 juillet 2022', '', 'Inconnu','');
-INSERT INTO piloti.movie(id, name, description, duration, released_date, bill, age_limit, mark) VALUES (3, 'Transformers', 'Une guerre sans merci oppose depuis des temps immémoriaux deux races de robots extraterrestres : les Autobots et les cruels Decepticons. Son enjeu : la maîtrise de l univers...', '2h24', '2007', '', '12', '');
-ALTER SEQUENCE piloti.movie_id_seq RESTART WITH 4;
-
