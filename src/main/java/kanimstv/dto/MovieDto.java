@@ -5,6 +5,7 @@ public class MovieDto {
     private int id;
     private String name;
     private String description;
+    private String trailer;
     private String duration;
     private String releasedDate;
     private byte[] bill;
@@ -33,6 +34,14 @@ public class MovieDto {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getTrailer() {
+        return trailer;
+    }
+
+    public void setTrailer(String trailer) {
+        this.trailer = trailer;
     }
 
     public String getDuration() {

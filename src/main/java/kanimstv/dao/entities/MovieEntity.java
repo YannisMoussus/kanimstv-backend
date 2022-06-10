@@ -26,6 +26,9 @@ public class MovieEntity {
     private String description;
 
     @Column
+    private String trailer;
+
+    @Column
     private String duration;
 
     @Column
@@ -44,7 +47,7 @@ public class MovieEntity {
     public MovieEntity() {
     }
 
-    public MovieEntity(int id, String name, String description, String duration, String releasedDate, byte[] bill, String ageLimit, String mark) {
+    public MovieEntity(int id, String name, String description, String trailer, String duration, String releasedDate, byte[] bill, String ageLimit, String mark) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -77,6 +80,14 @@ public class MovieEntity {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getTrailer() {
+        return this.trailer;
+    }
+
+    public void setTrailer(String trailer) {
+        this.trailer = trailer;
     }
 
     public String getDuration() {
@@ -167,12 +178,12 @@ public class MovieEntity {
             return false;
         }
         MovieEntity movieEntity = (MovieEntity) o;
-        return id == movieEntity.id && Objects.equals(name, movieEntity.name) && Objects.equals(description, movieEntity.description) && Objects.equals(duration, movieEntity.duration) && Objects.equals(releasedDate, movieEntity.releasedDate) && Objects.equals(bill, movieEntity.bill) && Objects.equals(ageLimit, movieEntity.ageLimit) && Objects.equals(mark, movieEntity.mark);
+        return id == movieEntity.id && Objects.equals(name, movieEntity.name) && Objects.equals(description, movieEntity.description) && Objects.equals(trailer, movieEntity.trailer) && Objects.equals(duration, movieEntity.duration) && Objects.equals(releasedDate, movieEntity.releasedDate) && Objects.equals(bill, movieEntity.bill) && Objects.equals(ageLimit, movieEntity.ageLimit) && Objects.equals(mark, movieEntity.mark);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, description, duration, releasedDate, bill, ageLimit, mark);
+        return Objects.hash(id, name, description, trailer, duration, releasedDate, bill, ageLimit, mark);
     }
 
     @Override
@@ -181,6 +192,7 @@ public class MovieEntity {
             " id='" + getId() + "'" +
             ", name='" + getName() + "'" +
             ", description='" + getDescription() + "'" +
+            ", trailer='" + getTrailer() + "'" +
             ", duration='" + getDuration() + "'" +
             ", releasedDate='" + getReleasedDate() + "'" +
             ", bill='" + getBill() + "'" +

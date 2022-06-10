@@ -36,6 +36,7 @@ public class MovieLogic {
         MovieEntity existingMovie = movieRepository.findById(movieDto.getId()).orElse(null);
         existingMovie.setName(movieDto.getName());
         existingMovie.setDescription(movieDto.getDescription());
+        existingMovie.setTrailer(movieDto.getTrailer());
         existingMovie.setDuration(movieDto.getDuration());
         existingMovie.setReleasedDate(movieDto.getReleasedDate());
         existingMovie.setBill(movieDto.getBill());
