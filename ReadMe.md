@@ -1,3 +1,5 @@
+psql --host=ec2-34-242-8-97.eu-west-1.compute.amazonaws.com --port=5432 --username=plbhqnvmvjmjza --password --dbname=dtknu474ejesk
+
 # [KanimsTv Application Backend]
 
 ### **The idea :**
